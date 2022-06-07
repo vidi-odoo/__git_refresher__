@@ -1,7 +1,5 @@
-require 'greeter'
+puts "What's your name"
+my_name = gets.strip
 
-# Default is World
-name = ARGV.first || "World"
+puts "Hello, #{my_name}!"
 
-greeter = Greeter.new(name)
-puts greeter.greet
